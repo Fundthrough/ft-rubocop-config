@@ -1,0 +1,1 @@
+# ft-rubocop-config
