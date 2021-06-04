@@ -1,3 +1,12 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'lib/tasks/**/*'
+    - 'config/**/*'
+
 Metrics/LineLength:
   Max: 120
 
