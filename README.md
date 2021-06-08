@@ -34,6 +34,15 @@ inherit_mode:
     - Exclude
 ```
 
+### Running rubocop for certain files
+
+Sometimes it's worth to run rubocop only for specific files, eg. to run check on files changed in last 5 commits:
+
+```
+git diff-tree -r --no-commit-id --name-only HEAD HEAD~5 | xargs ls -d 2>/dev/null | xargs bundle exec rubocop --force-exclusion -a
+```
+
+
 ## Development
 
 After checking out the repo, run `bundle install` to install dependencies.
