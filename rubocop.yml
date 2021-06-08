@@ -1,0 +1,37 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+    - 'bin/**/*'
+    - 'lib/tasks/**/*'
+    - 'config/**/*'
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+    - 'db/**/*.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+    - 'config/routes.rb'
+
+# We allow methods like 'is_something' instead of 'something?' in serializers
+Naming/PredicateName:
+  Exclude:
+    - 'app/serializers/**/*.rb'
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
