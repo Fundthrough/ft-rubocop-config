@@ -3,7 +3,6 @@ AllCops:
     - 'vendor/**/*'
     - 'spec/fixtures/**/*'
     - 'bin/**/*'
-    - 'db/**/*'
     - 'lib/tasks/**/*'
     - 'config/**/*'
 
@@ -15,6 +14,8 @@ Metrics/AbcSize:
 
 Metrics/MethodLength:
   Max: 15
+  Exclude:
+    - 'db/**/*.rb'
 
 Metrics/BlockLength:
   Exclude:
