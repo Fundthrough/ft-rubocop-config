@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
 
-  spec.add_runtime_dependency 'rubocop', '>= 0.81.0'
+  spec.add_runtime_dependency 'rubocop'
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 12.3"
