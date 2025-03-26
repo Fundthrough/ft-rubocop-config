@@ -4,9 +4,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "ft-rubocop-config"
-  spec.version       = '0.1.0'
+  spec.version       = '0.1.1'
   spec.authors       = ["Fundthrough"]
-  spec.email         = ["mikalai@fundthrough.com"]
+  spec.email         = ["oborodai@fundthrough.com"]
 
   spec.summary       = %q{Rubocop shared configuration}
   spec.description   = %q{Rubocop shared configuration}
