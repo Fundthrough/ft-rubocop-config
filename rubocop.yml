@@ -10,18 +10,19 @@ Layout/LineLength:
   Max: 120
 
 Metrics/AbcSize:
-  Max: 20
+  Enabled: false
 
 Metrics/MethodLength:
-  Max: 15
-  Exclude:
-    - 'db/**/*.rb'
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
 
 Metrics/BlockLength:
-  Exclude:
-    - 'lib/tasks/*.rake'
-    - 'spec/**/*_spec.rb'
-    - 'config/routes.rb'
+  Enabled: false
 
 # We allow methods like 'is_something' instead of 'something?' in serializers
 Naming/PredicateName:
@@ -30,9 +31,6 @@ Naming/PredicateName:
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
-
-Documentation:
-  Enabled: false
 
 Style/FrozenStringLiteralComment:
   Enabled: false
